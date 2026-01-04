@@ -1,18 +1,18 @@
 /* 
 Problem Statement
-You are given an array where each element represents a type of fruit arranged in a row of trees.
-You can collect fruits from a contiguous section using only two baskets, and each basket can hold only one type of fruit.
-You must pick exactly one fruit from each tree in the selected section.
-Return the maximum number of fruits you can collect.
+    You are given an array where each element represents a type of fruit arranged in a row of trees.
+    You can collect fruits from a contiguous section using only two baskets, and each basket can hold only one type of fruit.
+    You must pick exactly one fruit from each tree in the selected section.
+    Return the maximum number of fruits you can collect.
 Example
-Input:
-[1, 2, 1, 2, 3]
-Output:
-4
+    Input:
+        [1, 2, 1, 2, 3]
+    Output:
+        4
 Explanation
-The longest contiguous section that contains at most two fruit types is [1, 2, 1, 2].
-It contains only fruit types 1 and 2, and its length is 4.
-Including 3 would require a third basket, which is not allowed.
+    The longest contiguous section that contains at most two fruit types is [1, 2, 1, 2].
+    It contains only fruit types 1 and 2, and its length is 4.
+    Including 3 would require a third basket, which is not allowed.
 */
 function maxFruits( arr, k ){
     let start = 0 , end = 0, numOfFruits = 0 ; maxStart = 0 ; 

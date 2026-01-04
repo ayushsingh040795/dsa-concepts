@@ -1,4 +1,41 @@
+
 # Sliding Window Algorithms
+
+## What is the Sliding Window Technique?
+
+The sliding window technique is a powerful method for solving problems involving arrays or strings, where you need to examine a contiguous block (window) of elements. Instead of using nested loops to check every possible subarray or substring, you "slide" a window over the data, updating the result efficiently as you go.
+
+### Key Concepts
+- Use two pointers (start and end) to represent the current window.
+- Expand the window by moving the end pointer.
+- Shrink the window by moving the start pointer as needed (to maintain constraints).
+- Update results (sum, max, count, etc.) as the window moves.
+
+### Basic Pseudocode
+
+For a fixed-size window:
+
+```
+start = 0
+for end in 0 to n-1:
+	// Add arr[end] to window
+	if window size > K:
+		// Remove arr[start] from window
+		start += 1
+	// Update result if needed
+```
+
+For a variable-size window (e.g., with constraints):
+
+```
+start = 0
+for end in 0 to n-1:
+	// Add arr[end] to window
+	while window does not satisfy constraints:
+		// Remove arr[start] from window
+		start += 1
+	// Update result if needed
+```
 
 This folder contains JavaScript implementations of classic sliding window problems, each with a meaningful filename and a brief description of the problem it solves.
 

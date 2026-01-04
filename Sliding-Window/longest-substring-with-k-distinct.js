@@ -1,10 +1,10 @@
 /* 
 Longest Substring with K Distinct Characters
-Input:
-"araaci", K = 2
-Output:
-4 
-The longest substring with at most 2 distinct characters is "araa", which has length 4.
+    Input:
+        "araaci", K = 2
+    Output:
+        4 
+    The longest substring with at most 2 distinct characters is "araa", which has length 4.
 */
 function longestSubstring( str, k ){
     let start=0, end = 0 ;

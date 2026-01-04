@@ -1,9 +1,9 @@
 /*
 Longest Substring Without Repeating Characters
-Input:
-"abcabcbb"
-Output:
-3
+    Input:
+        "abcabcbb"
+    Output:
+        3
 */
 function longestSubstrWithoutRepeating( str ){
     let start = 0 , end = 0 , maxLength = 0 ; charFreq = {}, maxStart = 0 ;  

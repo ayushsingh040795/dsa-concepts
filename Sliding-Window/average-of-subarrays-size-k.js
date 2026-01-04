@@ -1,9 +1,9 @@
 /*  
 Return the average of all contiguous subarrays of size K
 Input:
-[1, 3, 2, 6, -1, 4, 1, 8, 2], K = 5
+    [1, 3, 2, 6, -1, 4, 1, 8, 2], K = 5
 Output:
-[2.2, 2.8, 2.4, 3.6, 2.8]
+    [2.2, 2.8, 2.4, 3.6, 2.8]
 */
 function averageSum( arr, k ){
     let winStart = 0 ;

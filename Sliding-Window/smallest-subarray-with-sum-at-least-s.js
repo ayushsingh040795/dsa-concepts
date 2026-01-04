@@ -1,9 +1,9 @@
 /* 
 Find the length of the smallest subarray with sum ≥ S.
-Input:
-[2, 1, 5, 2, 3, 2], S = 7
-Output:
-2 
+    Input:
+        [2, 1, 5, 2, 3, 2], S = 7
+    Output:
+        2 
 */
 function smallestSubarraysum( arr, k ){
     let winStart = 0 ; 

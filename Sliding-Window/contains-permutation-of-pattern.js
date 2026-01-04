@@ -1,17 +1,17 @@
 /* 
 Permutation in a String
 Problem Statement
-Given a string and a pattern, determine whether the string contains any substring that is a permutation of the pattern.
-A permutation uses all characters of the pattern exactly once, but the order may differ.
-Return true if such a substring exists; otherwise, return false.
+    Given a string and a pattern, determine whether the string contains any substring that is a permutation of the pattern.
+    A permutation uses all characters of the pattern exactly once, but the order may differ.
+    Return true if such a substring exists; otherwise, return false.
 Example
-Input:
-string = "oidbcaf", pattern = "abc"
-Output:
-true
+    Input:
+        string = "oidbcaf", pattern = "abc"
+    Output:
+        true
 Explanation
-The substring "bca" exists in the string and contains exactly the same characters as "abc", just in a different order.
-Therefore, a permutation of the pattern is present.
+    The substring "bca" exists in the string and contains exactly the same characters as "abc", just in a different order.
+    Therefore, a permutation of the pattern is present.
 */
 function hasPermutation( str, pattern ){
     let start = 0, end = 0, matched = 0 ;
