@@ -1,9 +1,36 @@
 
 # Sliding Window Algorithms
 
+
 ## What is the Sliding Window Technique?
 
 The sliding window technique is a powerful method for solving problems involving arrays or strings, where you need to examine a contiguous block (window) of elements. Instead of using nested loops to check every possible subarray or substring, you "slide" a window over the data, updating the result efficiently as you go.
+
+### Visual Diagram (ASCII)
+
+Suppose you have an array:
+
+`[1, 3, 5, 7, 9, 2, 6]`
+
+Sliding window of size 3:
+
+```
+Step 1: [1, 3, 5] 7 9 2 6
+Step 2:  1 [3, 5, 7] 9 2 6
+Step 3:  1 3 [5, 7, 9] 2 6
+Step 4:  1 3 5 [7, 9, 2] 6
+Step 5:  1 3 5 7 [9, 2, 6]
+```
+
+The window (shown in brackets) moves one element at a time.
+
+For variable-size windows, the window can expand or shrink based on constraints:
+
+```
+start -->   [1, 3, 5, 7, 9, 2, 6] <-- end
+			^^^^^^^^^^^^^
+		  window expands or shrinks
+```
 
 ### Key Concepts
 - Use two pointers (start and end) to represent the current window.
@@ -36,6 +63,10 @@ for end in 0 to n-1:
 		start += 1
 	// Update result if needed
 ```
+
+### More Visual Resources
+- [Sliding Window Pattern Explained (YouTube)](https://www.youtube.com/watch?v=MK-NZ4hN7rs)
+- [LeetCode Patterns: Sliding Window](https://leetcode.com/explore/learn/card/sliding-window/)
 
 This folder contains JavaScript implementations of classic sliding window problems, each with a meaningful filename and a brief description of the problem it solves.
 
